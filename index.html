@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Momentum</title>
+</head>
+<body>
+    <!--form: enter 시, form이 자동 submit, website 새로고침됨 -->
+    <form id="login-form" class="hidden">
+        <!--required: 반드시 필요, maxlenth: 최대길이 지정, 유효성 검사 위해서는
+        서는 input이 form 안에 있어야한다. -->
+        <input required maxlength="15" type="text" placeholder="What is your name?"/>
+        <input type="submit" value="LogIn">
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    
+    <!--js는 보통 맨 마지막에 import 한다-->
+    <script src="app.js"></script>
+</body>
+</html>
