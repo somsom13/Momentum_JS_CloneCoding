@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Momentum</title>
 </head>
@@ -23,26 +24,28 @@
         <form id="login-form" class="hidden">
             <!--required: 반드시 필요, maxlenth: 최대길이 지정, 유효성 검사 위해서는 input이 form 안에 있어야한다. -->
             <input class="input-form" required maxlength="15" type="text" placeholder="What is your name?"/>
-            <input type="submit" value="LogIn">
         </form>
         
         <h1 id="greeting" class="hidden"></h1>
 
-        <div id="question-div">
-        <form id="question-form" class="">
-            <input class="input-form" maxlength="10" type="text" placeholder="How are you feeling today?"/>
-            <input type="submit" value="FEELIN">
+        
+        <form id="question-form" class="hidden">
+            <input class="input-form" maxlength="30" type="text" placeholder="How are you feeling today?"/>
         </form>
-        <h2 id="feeling" class="hidden"></h2>
+        
+        <div id="feeling-div" class="hidden">
+        <h1 id="feeling"></h1>
+        <p id="change-feeling" style="margin-top:-10px;">Change My Feelings</p>
         </div>
+        
 
         <div id="todo-div">
-        <form id="todo-form">
-            <input class="input-form" type="text" placeholder="Write a ToDo and press Enter" required/>
-        </form>
-        <ul id="todo-list">
-            <!--js를 사용해 li를 add 해줄 것임-->
-        </ul>
+            <form id="todo-form">
+                <input class="input-form" type="text" placeholder="Write a ToDo and press Enter" required/>
+            </form>
+            <ul>
+                <!--js를 사용해 li를 add 해줄 것임-->
+            </ul>
         </div>
         <div id="quote">
             <div></div>

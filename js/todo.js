@@ -1,6 +1,6 @@
 const todoForm=document.getElementById("todo-form");
 const todoInput=todoForm.querySelector("input");//todoForm 내부의 input
-const todoList=document.getElementById("todo-list");
+const todoList=document.querySelector("#todo-div ul");
 
 let saveTodo=[];
 //새로고침 해도 localStorage에 있는 내용 가져와서, 이어쓰기 가능하도록 let으로 변경

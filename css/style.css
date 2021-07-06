@@ -24,37 +24,56 @@ body{
 }
 
 .input-form{
-    width:200px;
+    width:210px;
     border-top:none;
     border-right: none;
     border-bottom: 3px solid #fff;
     border-left: none;
     background:none;
     color:black;
+    text-align: center;
+    font-size:15px;
 }
 
-#question-div{
-    border: 1px solid red;
+#question-form{
     position:absolute;
     left:50%;
     width:max-content;
     transform: translate(-50%,-50%);
     bottom:200px;
-    display:inline-block;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
 
-#feeling{
-    
+#question-form > input{
+    width:250px;
+    font-size:20px;
 }
 
+#feeling-div{
+    position:absolute;
+    left:50%;
+    width:max-content;
+    transform: translate(-50%,-50%);
+    bottom:100px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+#change-feeling{
+    cursor:pointer;
+}
 
 #todo-div{
     position:absolute;
     width:max-content;
     top:15px;
     left:15px;
+}
+
+#todo-div > ul{
+    font-family: 'Open Sans', sans-serif;
 }
 
 .delete-button{
@@ -94,8 +113,14 @@ body{
     font-size: 70px;
 }
 
+#login-form >input:first-child{
+    position:relative;
+    top:30px;
+    font-size:23px;
+}
+
+
 #quote{
-    border:2px solid purple;
     position:absolute;
     left:50%;
     width:max-content;
