@@ -8,14 +8,16 @@ const greeting=document.querySelector("#greeting");
 const HIDDEN_CLASSNAME="hidden";
 const USERNAME_KEY="username";
 
+
 //Greeting 출력하는 function
 function paintGreetings(){
     const username=localStorage.getItem("username");
-    greeting.innerText="Hello "+username;
+    greeting.innerText="Hello, "+username;
     //`Hello ${username}`; 과 동일
     greeting.classList.remove(HIDDEN_CLASSNAME);
     //greeting이 보여지게 하기 위해
 }
+
 
 //로그인 과정 처리 function
 function handleLoginSubmit(info){ 
