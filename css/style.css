@@ -72,7 +72,11 @@ body{
     left:15px;
 }
 
+#todo-div > form{
+    margin-left:10px;
+}
 #todo-div > ul{
+    margin-left:-5px;
     font-family: 'Open Sans', sans-serif;
 }
 
