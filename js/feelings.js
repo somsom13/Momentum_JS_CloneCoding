@@ -1,9 +1,5 @@
-/* login 기본적으로 모든 class="hidden" 으로 두고 시작 */
-
 const questionForm=document.getElementById("question-form");
-//query selector를 쓰면 #으로 id 임을 명시해주자
 const feelingInput=questionForm.querySelector("input");
-//document.querySelector("#login-form input(button)");
 const feelingDiv=document.querySelector("#feeling-div");
 const feeling=document.querySelector("#feeling");
 const changeFeeling=document.querySelector("#change-feeling");
@@ -24,7 +20,6 @@ function paintFeelings(inputFeeling){
 }
 
 
-//로그인 과정 처리 function
 function onSubmitFeeling(info){ 
     info.preventDefault(); 
     const feeling=feelingInput.value;
